@@ -17,6 +17,6 @@ export const ScreenContainer = ({ children, style, ...props }: Props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff", // O el color de fondo de tu app
-  },
+    backgroundColor: "#fff"
+  }
 });

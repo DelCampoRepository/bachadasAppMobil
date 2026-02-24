@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-// Datos de ejemplo para las últimas recetas
+// Datos de ejemplo para las ultimas recetas
 const ULTIMAS_RECETAS = [
   { id: "1", nombre: "748392018472", fecha: "20/02/2026", emoji: "" },
   { id: "2", nombre: "102938475612", fecha: "19/02/2026", emoji: "" },
@@ -34,7 +34,6 @@ export const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      {/* SECCIÓN SUPERIOR: Sincronización */}
       <View style={styles.topSection}>
         <Text style={styles.sectionTitle}>Panel de Control</Text>
         <TouchableOpacity
@@ -46,7 +45,6 @@ export const HomeScreen = () => {
         </TouchableOpacity>
       </View>
 
-      {/* SECCIÓN INFERIOR: Últimas Recetas */}
       <View style={styles.bottomSection}>
         <View style={styles.listHeader}>
           <Text style={styles.sectionTitle}>Últimas Recetas Agregadas</Text>
@@ -72,9 +70,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F2F2F7"
   },
-  // --- Estilos Parte Superior ---
+
   topSection: {
-    flex: 0.3, // Ocupa el 30% de la pantalla
+    flex: 0.3,
     backgroundColor: "#FFFFFF",
     justifyContent: "center",
     alignItems: "center",
@@ -102,9 +100,8 @@ const styles = StyleSheet.create({
     fontWeight: "800"
   },
 
-  // --- Estilos Parte Inferior ---
   bottomSection: {
-    flex: 0.7, // Ocupa el 70% restante
+    flex: 0.7,
     paddingHorizontal: 20,
     paddingTop: 20
   },

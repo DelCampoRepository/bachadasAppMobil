@@ -9,11 +9,10 @@ import {
 import { useNavigation } from "@react-navigation/native";
 
 export const SincronizarScreen = () => {
-  const [status, setStatus] = useState("conectando"); // 'conectando', 'descargando', 'listo'
+  const [status, setStatus] = useState("conectando");
   const navigation = useNavigation();
 
   useEffect(() => {
-    // Simulamos las fases de una sincronización real
     setTimeout(() => setStatus("descargando"), 1500);
     setTimeout(() => setStatus("listo"), 3500);
   }, []);

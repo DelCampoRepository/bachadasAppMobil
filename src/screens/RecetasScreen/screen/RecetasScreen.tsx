@@ -173,8 +173,8 @@ const styles = StyleSheet.create({
   idBachada: {
     fontSize: 22,
     fontWeight: "800",
-    color: "#2a61df", // Resaltamos el ID de 12 dígitos
-    fontFamily: "monospace" // Para que los números se vean alineados
+    color: "#2a61df",
+    fontFamily: "monospace"
   },
   divider: {
     height: 1,

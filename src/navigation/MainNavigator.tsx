@@ -15,9 +15,8 @@ export const MainNavigator = () => {
         tabBarIcon: ({ focused }) => {
           let iconSource;
 
-          // 1. Definimos la ruta de la imagen según la pestaña
           if (route.name === "HomeTab") {
-            iconSource = require("../assets/Home.png"); // Ajusta la ruta a tus carpetas
+            iconSource = require("../assets/Home.png");
           } else if (route.name === "Recetas") {
             iconSource = require("../assets/List_View.png");
           }
